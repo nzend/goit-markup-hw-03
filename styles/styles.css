@@ -13,9 +13,10 @@
   --cards-radius: 0px 0px 4px 4px;
   --box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-    --cards-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  --cards-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   --main-font-size: 14px;
+  --header-border-bottom: #ececec;
 }
 
 /* палітра кольорів */
@@ -50,7 +51,8 @@ h3,
 h4,
 h5,
 ul,
-p {
+p,
+img {
   margin: 0;
   padding: 0;
 }
@@ -74,7 +76,7 @@ p {
 }
 /* Контейнер */
 .container {
-  width: 1230px;
+  width: 1170px;
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
@@ -83,6 +85,9 @@ p {
 }
 
 /* header */
+.page-header {
+  border-bottom: 1px solid var(--header-border-bottom);
+}
 .main-nav {
   display: flex;
   align-items: center;
@@ -169,15 +174,13 @@ p {
   color: var(--brend-color);
 }
 /* main */
-main {
-}
+
 .hero {
   background-color: var(--hero-background-color);
   text-align: center;
 }
 .hero-container {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 200px 252px;
 }
 
 .hero-title {
@@ -223,7 +226,6 @@ main {
 .features-container {
   padding-top: 94px;
   padding-bottom: 94px;
-
 }
 .features-list {
   display: flex;
@@ -328,7 +330,24 @@ footer {
 }
 /* портфоліо */
 /* projects-list */
-
+.projects-list {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.projects-cards img {
+  display: block;
+}
+.projects-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.projects-list li + li {
+  margin-left: 8px;
+}
+.cards-discriptions {
+  padding: 20px 24px;
+}
 .nav-button {
   font-style: inherit;
   font-weight: 500;
@@ -349,6 +368,8 @@ footer {
   box-shadow: var(--box-shadow);
 }
 .project-title {
+  max-width: 322px;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -356,6 +377,15 @@ footer {
   color: var(--second-color);
 }
 .project-subtitle {
+  max-width: 322px;
   font-size: 16px;
   line-height: 1.88;
+}
+.projects-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.projects-cards {
+  /* width: 322px; */
 }
