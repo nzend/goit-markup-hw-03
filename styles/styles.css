@@ -244,7 +244,8 @@ img {
 
 .features-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .features-list li {
   max-width: 270px;
@@ -263,7 +264,8 @@ img {
 /* що ми робимо */
 .image-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 /* команда */
@@ -273,8 +275,8 @@ img {
 
 .team {
   display: flex;
-  /* Тут має бути грід */
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .team-list {
   background-color: var(--main-white-color);
@@ -372,6 +374,11 @@ footer {
   box-shadow: var(--box-shadow);
 }
 
+.projects-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 .cards-discriptions {
   padding: 20px 24px;
   border-bottom: 1px solid var(--cards-border-color);
@@ -391,9 +398,4 @@ footer {
   max-width: 322px;
   font-size: 16px;
   line-height: 1.88;
-}
-.projects-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
 }
