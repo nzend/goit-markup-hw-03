@@ -81,7 +81,14 @@ img {
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
-  /* outline: 1px solid; */
+  outline: 1px solid;
+}
+ .section + .section  {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section.no-padding {
+  padding-top: 0px;
 }
 
 /* header */
@@ -190,7 +197,7 @@ img {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  text-align: center;
+  /* text-align: center; */
   color: var(--main-white-color);
   /* outline: 1px solid red; */
 }
@@ -224,8 +231,8 @@ img {
 }
 /* переваги */
 .features-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  /* padding-top: 94px;
+  padding-bottom: 94px; */
 }
 .features-list {
   display: flex;
@@ -249,15 +256,15 @@ img {
 .image-list {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
 }
 /* команда */
 .our-team-section {
   background-color: var(--second-white-color);
 }
 .our-team-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  /* padding-top: 94px;
+  padding-bottom: 94px; */
 }
 .team {
   display: flex;
@@ -330,6 +337,10 @@ footer {
 }
 /* портфоліо */
 /* projects-list */
+.section.our-projects {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .projects-list {
   display: flex;
   margin-bottom: 50px;
@@ -339,8 +350,8 @@ footer {
   display: block;
 }
 .projects-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  /* padding-top: 94px;
+  padding-bottom: 94px; */
 }
 .projects-list li + li {
   margin-left: 8px;
@@ -348,6 +359,7 @@ footer {
 .cards-discriptions {
   padding: 20px 24px;
 }
+
 .nav-button {
   font-style: inherit;
   font-weight: 500;
