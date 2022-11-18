@@ -192,15 +192,17 @@ img {
   background-color: var(--hero-background-color);
   text-align: center;
 }
-.hero-container {
-  padding: 200px 252px;
-}
+
 .section.hero {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
+  /* display: inline-block; */
+  width: 696px;
+  /* margin-left: auto;
+  margin-right: auto; */
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -211,6 +213,7 @@ img {
   color: var(--main-white-color);
   /* outline: 1px solid red; */
 }
+
 .hero-button {
   font-weight: 700;
   font-size: 16px;
@@ -251,6 +254,7 @@ img {
   max-width: 270px;
 }
 .features-title {
+  margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.14;
 
@@ -308,10 +312,11 @@ img {
 footer {
   background-color: var(--hero-background-color);
 }
-.container.footer-box {
+.section-footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .footer-logo {
   margin-bottom: 28px;
 }
