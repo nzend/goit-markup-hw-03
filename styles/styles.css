@@ -11,6 +11,7 @@
   --contacts-color: rgba(255, 255, 255, 0.6);
   --header-border-bottom: #ececec;
   --cards-border-color: #eeeeee;
+  --items-color: #afb1b8;
   --border-radius: 4px;
   --cards-radius: 0px 0px 4px 4px;
   --box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -164,6 +165,7 @@ img {
 .auth-nav .item + .item {
   margin-left: 50px;
 }
+
 .contacts-icon.envelope {
   width: 16px;
   height: 12px;
@@ -174,23 +176,11 @@ img {
   height: 16px;
   fill: currentColor;
 }
-
-/* .mail-link .contacts-icon:hover {
-  fill: currentColor;
-} */
 .contacts-icon {
+  width: 100%;
+  height: 100%;
   margin-right: 10px;
 }
-
-.contacts-icon.smartphone {
-  width: 10px;
-  height: 16px;
-}
-/* .contacts {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-} */
 
 .mail-link,
 .phone-link {
@@ -369,7 +359,8 @@ img {
   border-radius: 50%;
   /* outline: 1px solid black; */
 }
-.social-item:hover {
+.social-item:hover,
+.social-item:focus {
   background-color: var(--brend-color);
 }
 .social-item:not(:last-child) {
@@ -383,15 +374,61 @@ img {
   align-items: center;
 }
 .join-svg {
-  fill: #afb1b8;
+  fill: var(--items-color);
 }
-.join-link:hover .join-svg {
+.join-link:hover .join-svg,
+.join-link:focus .join-svg {
   fill: var(--main-white-color);
 }
+/* Постійні клієнти */
+.costomers-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.costomers-item {
+  width: 170px;
+  height: 92px;
+}
 
+.costomers-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.costomers-link:hover,
+.costomers-link:focus {
+  border-color: var(--brend-color);
+}
+.costomers-link {
+  fill: #afb1b8;
+}
+.costomers-link:hover,
+.costomers-link:focus {
+  fill: var(--brend-color);
+}
 /* footer */
 footer {
   background-color: var(--hero-background-color);
+}
+.container.footer-box {
+  display: flex;
+}
+.adding {
+  margin-left: 70px;
+}
+.adding-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.03em;
+  color: var(--main-white-color);
+  margin-bottom: 20px;
 }
 .section-footer {
   padding-top: 60px;
@@ -426,6 +463,20 @@ footer {
 .number {
   line-height: 1.71;
   color: var(--contacts-color);
+}
+.join-link.footer {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.join-link:hover.footer,
+.join-link:focus.footer {
+  background-color: var(--brend-color);
+}
+.join-svg.footer {
+  fill: var(--main-white-color);
 }
 /* ----------------портфоліо--------------- */
 
